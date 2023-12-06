@@ -1,56 +1,129 @@
-var card = document.querySelector(".cards_games_list")
-var lete = {
-  "games": [
-      {
-          "nome": "Stardew Valley",
-          "url": "https://gaming-cdn.com/images/products/1767/616x353/game-steam-stardew-valley-cover.jpg?v=1608049517",
-          "hours": "222h",
-          "personagens": [
-              {
-                  "nome": "Elliott",
-                  "url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8dbd938-c29d-4e2a-912e-1bc70a2a16b9/defy5n7-3a500a3e-510d-4b3a-b32c-34bad0237db0.jpg/v1/fill/w_1280,h_1132,q_75,strp/elliot_stardew_valley_by_sanguinewolves_defy5n7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzMiIsInBhdGgiOiJcL2ZcL2U4ZGJkOTM4LWMyOWQtNGUyYS05MTJlLTFiYzcwYTJhMTZiOVwvZGVmeTVuNy0zYTUwMGEzZS01MTBkLTRiM2EtYjMyYy0zNGJhZDAyMzdkYjAuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.abH0lReikvCX-9mxfoiiw2UaSZGT6FzkG6nJzMDQv70"
-              }
-          ]
-      },
-      {
-          "nome": "Don't Starve Together",
-          "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000019795/081425533fd5a75ad96eb4333f260edf690b91110402ac801e07fd332035da8e",
-          "hours": "222h",
-          "personagens": [
-              {
-                  "nome": "Wilson",
-                  "url": "https://static.wikia.nocookie.net/dont-starve-game/images/7/78/Wilson.png/revision/latest?cb=20141001173405&path-prefix=pt",
-                  "apelido": "Cavalheiro Cientista",
-                  "lema": "Conquistarei tudo com o poder da minha MENTE!",
-                  "skill":"Cresce uma grandiosa barba",
-                  "life": "150",
-                  "hunger": "150",
-                  "sanity": "200"
-              },
-              {
-                  "nome": "Wagstaff",
-                  "url": "https://static.wikia.nocookie.net/dont-starve-game/images/9/95/Wagstaff.png/revision/latest?cb=20190419171438&path-prefix=pt",
-                  "apelido": "O enigmático fundador",
-                  "lema": "Eureka! Meu destino me aguarda!",
-                  "skill":"Um grande inventor\nMíope\nEstômago Frágil",
-                  "life": "150",
-                  "hunger": "225",
-                  "sanity": "150"
-              },
-              {
-                  "nome": "Warly",
-                  "url": "https://static.wikia.nocookie.net/dont-starve-game/images/d/da/Warly.png/revision/latest?cb=20160324181904&path-prefix=pt",
-                  "apelido": "O Cozinheiro",
-                  "lema": "Nada de útil é feito de barriga vazia!",
-                  "skill":"Tem os próprios itens de cozinha portáteis Pode temperar as coisas. Tem um apetite insaciável. Só come comida gourmet",
-                  "life": "150",
-                  "hunger": "250",
-                  "sanity": "200"
-              }
-          ]
-      }
-  ]
+var cards = document.querySelector(".cards_games_list")
+var listGames= [
+    {
+        "nome": "Don't Starve Together",
+        "url_image": "https://upload.wikimedia.org/wikipedia/en/d/d2/Don%27t_Starve_cover.jpg",
+        "dispositivos":[
+            'fa-steam', 'fa-windows', 'fa-linux', 'fa-apple'
+        ],
+        "lojas":[
+            {
+                "nome": "Nuuvem",
+                "preco": "09,51",
+                "url_game_loja":"https://www.nuuvem.com/br-pt/item/dont-starve-together",
+                "url_logo":"https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg"
+            },{
+                "nome": "Green man gaming",
+                "preco": "25,19",
+                "url_game_loja":"https://www.greenmangaming.com/games/dont-starve-together-pc/",
+                "url_logo": ""
+            },{
+                "nome": "Steam",
+                "preco": "20,69",
+                "url_game_loja":"https://store.steampowered.com/app/219740/Dont_Starve/",
+                "url_logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png"
+            }
+        ],
+        "descricao":"Don't Starve é um jogo eletrônico de ação-aventura com elementos de sobrevivência e roguelike desenvolvido e publicado pela Klei Entertainment. O jogo foi inicialmente lançado através do software Steam da Valve Corporation para Microsoft Windows, Linux e OS X no dia 23 de abril de 2013.",
+        "personages":[
+            {
+                "nome":"Wilson",
+                "url_image":'https://steamuserimages-a.akamaihd.net/ugc/757095817927234527/7AF93849222BE80F1CFFC59B3F44583D14705054/',
+                "url_pag":"https://dontstarve.fandom.com/pt/wiki/Wilson"
+            },
+            {
+                "nome":"Willow",
+                "url_image":'https://steamuserimages-a.akamaihd.net/ugc/757095817927328702/DFA42256101CCF4EDE486FF27FF381A7A6557EC4/',
+                "url_pag":"https://dontstarve.fandom.com/pt/wiki/Willow"
+            },
+            {
+                "nome":"Wendy",
+                "url_image":'https://steamuserimages-a.akamaihd.net/ugc/757095817927346410/6F54BBE9856CA78AEE4AB0AE2CDA2C6EEBD56DC4/',
+                "url_pag":"https://dontstarve.fandom.com/pt/wiki/Wendy"
+            },
+            {
+                "nome":"Wigfrid",
+                "url_image":'https://steamuserimages-a.akamaihd.net/ugc/757095817927385895/54AC06824ACD7B2B22BF45B6753FCA725C0F5429/',
+                "url_pag":"https://dontstarve.fandom.com/pt/wiki/Wigfrid"
+            }
+        ],
+        "categorias":['Sobrevivência', 'Aventura', 'Indie'],
+        "empresa": {
+            "nome":"Klei",
+            "url_empresa":"https://store.steampowered.com/franchise/klei"
+        }
+    }
+]
+console.log("carregando")
+for(let i = 0;i < listGames.length;i++){
+    let dispo = 0;
+    let categorias = 0;
+    var persons = 0;
+    listGames[i].lojas.forEach((loja) => {
+        cards.innerHTML +=`
+        <div class="card_face">
+            <div class="card_game">
+                <div class="card_image">
+                    <img src="${listGames[i].url_image}" alt="${listGames[i].nome}">
+                </div>
+                <div class="card_content">
+                    <button id="btn_hidden_back"><span>${listGames[i].nome} <i class="fa-solid fa-arrow-right"></i></span></button>
+                    <ul id="card_content_dispositivos_${dispo}">
+                    </ul>
+                </div>
+                <div class="card_price">
+                    <a href="${loja.url_game_loja}" target="_blank"><input type="button" value="R$ ${loja.preco}"></a>
+                    <span class="card_price_store">
+                        <img src="${loja.url_logo}" alt="${loja.nome}">
+                        <p>${loja.nome}</p>
+                    </span>
+                </div>
+            </div>
+            <div class="card_back">
+                <div class="card_back_content">
+                    <h3>Sobre</h3>
+                    <p>${listGames[i].descricao}</p>
+                </div>
+
+                <div class="card_back_persons">
+                    <ul id="card_back_persons_${persons}">
+                    
+                    </ul>
+                </div>
+
+                <div class="card_back_categoria">
+                    <ul id="card_back_categoria_${categorias}">
+                    </ul>
+                </div>
+                <div class="card_back_confir">
+                    <a href="${listGames[i].empresa.url_empresa}" target="_blank">Confira tudo de ${listGames[i].empresa.nome} no Steam</a>
+                </div>
+                
+                <div class="card_back_btn">
+                    <button id="btn_hidden_front"><span><i class="fa-solid fa-arrow-left"></i> ${listGames[i].nome}</span></button>
+                </div>
+            </div>
+        </div>
+        `
+        
+        for(let disp = 0;disp < listGames[i].dispositivos.length;disp++){
+            const dispositivos = document.querySelector(`#card_content_dispositivos_${dispo}`)
+            dispositivos.innerHTML += `<li><i class="fa-brands ${listGames[i].dispositivos[disp]}"></i></li>`
+        }
+
+        listGames[i].personages.forEach((personagem) => {
+            const personagenss = document.querySelector(`#card_back_persons_${persons}`)
+            personagenss.innerHTML += `<li><a href="${personagem.url_pag}" target="_blank"><img src="${personagem.url_image}" alt="${personagem.nome}"></a></li>`
+        });
+
+        for(let cat = 0;cat < listGames[i].categorias.length;cat++){
+            const categoriass = document.querySelector(`#card_back_categoria_${categorias}`)
+            categoriass.innerHTML += `<li>${listGames[i].categorias[cat]}</li>`
+        }
+        dispo++;
+        persons++;
+        categorias++
+    });
 }
 
 
-console.log(lete.games)

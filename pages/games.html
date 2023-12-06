@@ -11,12 +11,13 @@
             crossorigin="anonymous" />
         <link rel="stylesheet" href="../assets/css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../assets/img/icon.png" type="image/x-icon">
     </head>
     <body>
         <header class="header-container">
             <div class="header-bar container">
                 <div class="header_logo">
-                    <span><a href="../index.html">Snniky</a></span>
+                    <img src="../assets/img/icon.png" alt=""><span><a href="../index.html">Snniky</a></span>
                 </div>
                 <div class="header_search d-none d-lg-block">
                     <form class="search__box">
@@ -123,8 +124,8 @@
                     <button id="btn_mobile"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
                     <div class="accont_popver_items_show" id="accont_popver_items">
                         <ul class="accont_popver_items_list">
-                            <li><a href="">Entrar</a></li>
-                            <li><a href="games.html">Games</a></li>
+                            <li><a href="./login.html">Entrar</a></li>
+                            <li><a href="./games.html">Games</a></li>
                             <li><a href="">Contato</a></li>
                         </ul>
                     </div>
@@ -133,179 +134,213 @@
         </header>
 
         <main class="games_list">
+            <div class="games_add_game">
+                <input type="button" value="Adicionar" class="btn_add_game">
+            </div>
+            
             <div class="cards_games_list">
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Don%27t_Starve_cover.jpg" alt="Dont Starve">
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Don%27t_Starve_cover.jpg" alt="Don't Starve Together">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Don't Starve Together <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/item/dont-starve-together" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
                     </div>
-                    <div class="card_content">
-                        <span>Dont Starve</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 20,00">
-                        <span class="card_price_store">
-                            <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="">
-                            <p>Nuuvem</p>
-                        </span>
-                    </div>
-                </div>
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Don%27t_Starve_cover.jpg" alt="Dont Starve">
-                    </div>
-                    <div class="card_content">
-                        <span>Dont Starve</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 60,00">
-                        <span class="card_price_store">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/1764px-Epic_Games_logo.svg.png" alt="">
-                            <p>Epic Games</p>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png" alt="Stardew Valley">
-                    </div>
-                    <div class="card_content">
-                        <span>Stardew Valley</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 20,00">
-                        <span class="card_price_store">
-                            <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="">
-                            <p>Nuuvem</p>
-                        </span>
+                    <div class="card_back">
+                        <div class="card_back_content">
+                            <h3>Sobre</h3>
+                            <p>Don't Starve é um jogo eletrônico de ação-aventura com elementos de sobrevivência e roguelike desenvolvido e publicado pela Klei Entertainment. O jogo foi inicialmente lançado através do software Steam da Valve Corporation para Microsoft Windows, Linux e OS X no dia 23 de abril de 2013.</p>
+                        </div>
+        
+                        <div class="card_back_persons">
+                            <ul id="card_back_persons_0">
+                            
+                            <li><a href="https://dontstarve.fandom.com/pt/wiki/Wilson" target="_blank"><img src="https://steamuserimages-a.akamaihd.net/ugc/757095817927234527/7AF93849222BE80F1CFFC59B3F44583D14705054/" alt="Wilson"></a></li><li><a href="https://dontstarve.fandom.com/pt/wiki/Willow" target="_blank"><img src="https://steamuserimages-a.akamaihd.net/ugc/757095817927328702/DFA42256101CCF4EDE486FF27FF381A7A6557EC4/" alt="Willow"></a></li><li><a href="https://dontstarve.fandom.com/pt/wiki/Wendy" target="_blank"><img src="https://steamuserimages-a.akamaihd.net/ugc/757095817927346410/6F54BBE9856CA78AEE4AB0AE2CDA2C6EEBD56DC4/" alt="Wendy"></a></li><li><a href="https://dontstarve.fandom.com/pt/wiki/Wigfrid" target="_blank"><img src="https://steamuserimages-a.akamaihd.net/ugc/757095817927385895/54AC06824ACD7B2B22BF45B6753FCA725C0F5429/" alt="Wigfrid"></a></li></ul>
+                        </div>
+        
+                        <div class="card_back_categoria">
+                            <ul id="card_back_categoria_0">
+                            <li>Sobrevivência</li><li>Aventura</li><li>Indie</li></ul>
+                        </div>
+                        <div class="card_back_confir">
+                            <a href="https://store.steampowered.com/franchise/klei" target="_blank">Confira tudo de Klei no Steam</a>
+                        </div>
+                        
+                        <div class="card_back_btn">
+                            <button id="btn_hidden_front"><span><i class="fa-solid fa-arrow-left"></i> Don't Starve Together</span></button>
+                        </div>
                     </div>
                 </div>
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png" alt="Stardew Valley">
+               
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="https://www.researchgate.net/publication/342704239/figure/fig1/AS:960471637192707@1606005691630/Stardew-Valley-promotional-image-Sourcewwwstardewvalleynet-Image-copyright-Eric-Barone.jpg" alt="Stardew Valley">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Stardew Valley <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
                     </div>
-                    <div class="card_content">
-                        <span>Stardew Valley</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 60,00">
-                        <span class="card_price_store">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/1764px-Epic_Games_logo.svg.png" alt="">
-                            <p>Epic Games</p>
-                        </span>
-                    </div>
+                    
                 </div>
 
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1698860631" alt="Counter-Strike 2">
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="data:image/jpeg;base64,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" alt="Counter-Strike 2">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Counter-Strike 2 <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
                     </div>
-                    <div class="card_content">
-                        <span>Counter-Strike 2</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 20,00">
-                        <span class="card_price_store">
-                            <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="">
-                            <p>Nuuvem</p>
-                        </span>
-                    </div>
-                </div>
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1698860631" alt="Counter-Strike 2">
-                    </div>
-                    <div class="card_content">
-                        <span>Counter-Strike 2</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 60,00">
-                        <span class="card_price_store">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/1764px-Epic_Games_logo.svg.png" alt="">
-                            <p>Epic Games</p>
-                        </span>
-                    </div>
+                    
                 </div>
 
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNzRjY2VhZDgtZGJlZi00ZmM2LTk1MTQtNDg4ZTY4YmFkN2I3XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg" alt="Dead Cells">
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="https://manchesterinklink.com/wp-content/uploads/2020/08/Brawlhalla-Banner.jpg" alt="Brawlhalla">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Brawlhalla <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
                     </div>
-                    <div class="card_content">
-                        <span>Dead Cells</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 20,00">
-                        <span class="card_price_store">
-                            <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="">
-                            <p>Nuuvem</p>
-                        </span>
-                    </div>
+                    
                 </div>
-                <div class="card_game">
-                    <div class="card_image">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNzRjY2VhZDgtZGJlZi00ZmM2LTk1MTQtNDg4ZTY4YmFkN2I3XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg" alt="Dead Cells">
+
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabi10WFZ-udNaRH5o1d8Le9Z6QkO8cjDINKzgegEbu4_U_zPftHNoPcK8x54bCtLBNYI&usqp=CAU" alt="Sniper Ghost Warrior 2">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Sniper Ghost Warrior 2 <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
                     </div>
-                    <div class="card_content">
-                        <span>Dead Cells</span>
-                        <ul>
-                            <li><i class="fa-brands fa-steam" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-windows" style="color: #000000;"></i></li>
-                        </ul>
-                    </div>
-                    <div class="card_price">
-                        <input type="button" value="R$ 60,00">
-                        <span class="card_price_store">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/1764px-Epic_Games_logo.svg.png" alt="">
-                            <p>Epic Games</p>
-                        </span>
-                    </div>
+                    
                 </div>
+
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="https://blog.navegamer.com.br/wp-content/uploads/2023/01/9edf816d-5625-45d2-9ef6-8b2ae65bb7eaCover_Elder-Ring-1024x640.webp" alt="Elden Ring">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Elden Ring <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card_face">
+                    <div class="card_game">
+                        <div class="card_image">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_859998-MLA51424555459_092022-O.webp" alt="Forza Horizon 5">
+                        </div>
+                        <div class="card_content">
+                            <button id="btn_hidden_back"><span>Forza Horizon 5 <i class="fa-solid fa-arrow-right"></i></span></button>
+                            <ul id="card_content_dispositivos_0">
+                            <li><i class="fa-brands fa-steam"></i></li><li><i class="fa-brands fa-windows"></i></li><li><i class="fa-brands fa-linux"></i></li><li><i class="fa-brands fa-apple"></i></li></ul>
+                        </div>
+                        <div class="card_price">
+                            <a href="https://www.nuuvem.com/br-pt/" target="_blank"><input type="button" value="R$ 09,51"></a>
+                            <span class="card_price_store">
+                                <img src="https://asset.brandfetch.io/idDzb5HIaZ/id35ff2Z_f.svg" alt="Nuuvem">
+                                <p>Nuuvem</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+
             </div>
         </main>
-
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous">
         </script>
+        <!-- <script src="../assets/js/listgames.js"></script> -->
         <script>
-            const btn_mobile = document.querySelector("#btn_mobile");
+            var btn_back = document.querySelector('#btn_hidden_back');
+            var btn_front = document.querySelector('#btn_hidden_front');
 
+            console.log(btn_back)
+            console.log(btn_front)
+            
+            btn_back.addEventListener('click', () => {
+                var face = document.querySelector('.card_face');
+                face.classList.toggle('active');
+            });
+            btn_front.addEventListener('click', () => {
+                var face = document.querySelector('.card_face');
+                face.classList.remove('active');
+            });
+
+            const btn_mobile = document.querySelector("#btn_mobile");
             btn_mobile.addEventListener("click", (e) => {
                 let btMenu = document.querySelector("#accont_popver_items");
                 btMenu.className = (btMenu.className ==  "accont_popver_items_hiden")? "accont_popver_items_show": "accont_popver_items_hiden"
             });
         </script>
+        
     </body>
 
 </html>
